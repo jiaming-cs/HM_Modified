@@ -1,0 +1,13 @@
+D:/Code/HM_64/HM/build64/CMakeFiles/ALL_BUILD.dir
+D:/Code/HM_64/HM/build64/CMakeFiles/ZERO_CHECK.dir
+D:/Code/HM_64/HM/build64/source/Lib/TLibCommon/CMakeFiles/TLibCommon.dir
+D:/Code/HM_64/HM/build64/source/Lib/TLibCommonAnalyser/CMakeFiles/TLibCommonAnalyser.dir
+D:/Code/HM_64/HM/build64/source/Lib/TLibDecoder/CMakeFiles/TLibDecoder.dir
+D:/Code/HM_64/HM/build64/source/Lib/TLibDecoderAnalyser/CMakeFiles/TLibDecoderAnalyser.dir
+D:/Code/HM_64/HM/build64/source/Lib/TLibEncoder/CMakeFiles/TLibEncoder.dir
+D:/Code/HM_64/HM/build64/source/Lib/Utilities/CMakeFiles/Utilities.dir
+D:/Code/HM_64/HM/build64/source/App/TAppDecoder/CMakeFiles/TAppDecoder.dir
+D:/Code/HM_64/HM/build64/source/App/TAppDecoderAnalyser/CMakeFiles/TAppDecoderAnalyser.dir
+D:/Code/HM_64/HM/build64/source/App/TAppEncoder/CMakeFiles/TAppEncoder.dir
+D:/Code/HM_64/HM/build64/source/App/TAppMCTSExtractor/CMakeFiles/MCTSExtractor.dir
+D:/Code/HM_64/HM/build64/source/App/Parcat/CMakeFiles/parcat.dir

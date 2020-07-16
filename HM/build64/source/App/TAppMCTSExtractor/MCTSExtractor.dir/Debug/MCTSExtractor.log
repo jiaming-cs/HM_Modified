@@ -1,0 +1,5 @@
+﻿  Building Custom Rule D:/Code/HM_64/HM/source/App/TAppMCTSExtractor/CMakeLists.txt
+  TAppMctsExtCfg.cpp
+  TAppMctsExtTop.cpp
+  mctsExtmain.cpp
+  MCTSExtractor.vcxproj -> D:\Code\HM_64\HM\bin\vs15\msvc-19.16\x86_64\debug\MCTSExtractor.exe

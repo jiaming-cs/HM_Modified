@@ -1,0 +1,5 @@
+﻿  Building Custom Rule D:/Code/HM_64/HM/source/App/TAppEncoder/CMakeLists.txt
+  TAppEncCfg.cpp
+  TAppEncTop.cpp
+  encmain.cpp
+  TAppEncoder.vcxproj -> D:\Code\HM_64\HM\bin\vs15\msvc-19.16\x86_64\debug\TAppEncoder.exe
