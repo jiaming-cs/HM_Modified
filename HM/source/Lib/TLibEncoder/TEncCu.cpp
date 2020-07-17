@@ -239,8 +239,8 @@ Void TEncCu::compressCtu( TComDataCU* pCtu )
   // analysis of CU
   DEBUG_STRING_NEW(sDebug)
   char dir[PATH_MAX] = {0};
-  
   size_t n = readlink("/proc/self/exe", dir, PATH_MAX);
+  
   n++;
   string path = dir;
   size_t index = path.find("TAppEncoder_64_linux");
