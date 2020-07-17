@@ -42,6 +42,8 @@
 #include <fcntl.h>
 #include <assert.h>
 #include <iomanip>
+#include <linux/limits.h>
+#include <unistd.h>
 
 #include "TAppEncTop.h"
 #include "TLibEncoder/TEncTemporalFilter.h"
@@ -651,12 +653,21 @@ Void TAppEncTop::encode()
 
     if (m_gopBasedTemporalFilterEnabled)
     {
+
       temporalFilter.filter(pcPicYuvOrg, m_iFrameRcvd);
     }
 
     // increase number of received frames
     m_iFrameRcvd++;
-	ofstream outfile("PartitionInfo.txt", ios::in | ios::app);
+      char dir[PATH_MAX] = {0};
+  
+  size_t n = readlink("/proc/self/exe", dir, PATH_MAX);
+
+  n ++;
+  string path = dir;
+  size_t index = path.find("TAppEncoder_64_linux");
+  path = path.substr(0, index);
+  ofstream outfile(path + "PartitionInfo.txt", ios::in | ios::app);
 	outfile << "frame:" << m_iFrameRcvd << endl;
 
     bEos = (m_isField && (m_iFrameRcvd == (m_framesToBeEncoded >> 1) )) || ( !m_isField && (m_iFrameRcvd == m_framesToBeEncoded) );

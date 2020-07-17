@@ -1,8 +1,8 @@
-# Install script for directory: D:/Code/HM_64/HM
+# Install script for directory: /home/jiaming/apps/HM_Modified/HM
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "D:/Code/HM_64/HM/install")
+  set(CMAKE_INSTALL_PREFIX "/home/jiaming/apps/HM_Modified/HM/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -27,6 +27,11 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
+endif()
+
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
@@ -34,17 +39,17 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("D:/Code/HM_64/HM/build64/source/Lib/TLibCommon/cmake_install.cmake")
-  include("D:/Code/HM_64/HM/build64/source/Lib/TLibCommonAnalyser/cmake_install.cmake")
-  include("D:/Code/HM_64/HM/build64/source/Lib/TLibDecoder/cmake_install.cmake")
-  include("D:/Code/HM_64/HM/build64/source/Lib/TLibDecoderAnalyser/cmake_install.cmake")
-  include("D:/Code/HM_64/HM/build64/source/Lib/TLibEncoder/cmake_install.cmake")
-  include("D:/Code/HM_64/HM/build64/source/Lib/Utilities/cmake_install.cmake")
-  include("D:/Code/HM_64/HM/build64/source/App/TAppDecoder/cmake_install.cmake")
-  include("D:/Code/HM_64/HM/build64/source/App/TAppDecoderAnalyser/cmake_install.cmake")
-  include("D:/Code/HM_64/HM/build64/source/App/TAppEncoder/cmake_install.cmake")
-  include("D:/Code/HM_64/HM/build64/source/App/TAppMCTSExtractor/cmake_install.cmake")
-  include("D:/Code/HM_64/HM/build64/source/App/Parcat/cmake_install.cmake")
+  include("/home/jiaming/apps/HM_Modified/HM/build64/source/Lib/TLibCommon/cmake_install.cmake")
+  include("/home/jiaming/apps/HM_Modified/HM/build64/source/Lib/TLibCommonAnalyser/cmake_install.cmake")
+  include("/home/jiaming/apps/HM_Modified/HM/build64/source/Lib/TLibDecoder/cmake_install.cmake")
+  include("/home/jiaming/apps/HM_Modified/HM/build64/source/Lib/TLibDecoderAnalyser/cmake_install.cmake")
+  include("/home/jiaming/apps/HM_Modified/HM/build64/source/Lib/TLibEncoder/cmake_install.cmake")
+  include("/home/jiaming/apps/HM_Modified/HM/build64/source/Lib/Utilities/cmake_install.cmake")
+  include("/home/jiaming/apps/HM_Modified/HM/build64/source/App/TAppDecoder/cmake_install.cmake")
+  include("/home/jiaming/apps/HM_Modified/HM/build64/source/App/TAppDecoderAnalyser/cmake_install.cmake")
+  include("/home/jiaming/apps/HM_Modified/HM/build64/source/App/TAppEncoder/cmake_install.cmake")
+  include("/home/jiaming/apps/HM_Modified/HM/build64/source/App/TAppMCTSExtractor/cmake_install.cmake")
+  include("/home/jiaming/apps/HM_Modified/HM/build64/source/App/Parcat/cmake_install.cmake")
 
 endif()
 
@@ -56,5 +61,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/Code/HM_64/HM/build64/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/jiaming/apps/HM_Modified/HM/build64/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

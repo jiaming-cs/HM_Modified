@@ -43,6 +43,8 @@
 
 #include <cmath>
 #include <algorithm>
+#include <linux/limits.h>
+#include <unistd.h>
 using namespace std;
 
 
@@ -236,7 +238,14 @@ Void TEncCu::compressCtu( TComDataCU* pCtu )
 
   // analysis of CU
   DEBUG_STRING_NEW(sDebug)
-  ofstream outfile("PartitionInfo.txt", ios::in | ios::app);
+  char dir[PATH_MAX] = {0};
+  
+  size_t n = readlink("/proc/self/exe", dir, PATH_MAX);
+  n++;
+  string path = dir;
+  size_t index = path.find("TAppEncoder_64_linux");
+  path = path.substr(0, index);
+  ofstream outfile(path + "PartitionInfo.txt", ios::in | ios::app);
   UInt temp_ctu_addr = pCtu->getCtuRsAddr();
   outfile << "ctu:" << temp_ctu_addr << endl;
   
